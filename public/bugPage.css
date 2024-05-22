@@ -1,0 +1,236 @@
+*body {
+  background-color: #d5ba36;
+}
+
+@font-face {
+  font-family: "mainHeadingbuggify";
+  src: url("Pilowlava-Regular.woff") format("woff");
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+#mainContainer {
+  width: 100vw;
+  height: 100vh;
+  background-color: #d5ba36;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+
+#headingBuggify {
+  text-align: center;
+  background-color: gray;
+  font-family: "mainHeadingbuggify";
+  font-weight: 900;
+  font-size: 3rem;
+  color: #d5ba36;
+  opacity: 80%;
+  box-shadow: 0px 0px 15px 15px #607d8b inset;
+  padding: 10px;
+}
+
+#headerDiv {
+  display: flex;
+  justify-content: space-between;
+  background-color: #e4cf69;
+  border-radius: 20px;
+}
+
+@keyframes loading2 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes loading1 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#bugPic1 {
+  max-height: 30px;
+  max-width: 30px;
+  margin-top: 40px;
+  animation: loading1 2s linear infinite;
+}
+
+#bugPic2 {
+  max-height: 30px;
+  max-width: 30px;
+  margin-top: 40px;
+  animation: loading2 2s linear infinite;
+}
+
+#bugPic1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#bugPic2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#goHomepage {
+  margin-top: 7px;
+}
+#goHomepage button {
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #d5ba36;
+  font-size: 2.2rem;
+  background-color: #607d8b;
+  border: none;
+  padding: 7px;
+  border-radius: 50%;
+  box-shadow: 0 4px #999;
+}
+
+#goHomepage button:hover {
+  background-color: #435765;
+}
+
+#goHomepage button:active {
+  background-color: #435765;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+#addNewbug {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#addNewbug button {
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #d5ba36;
+  font-size: 1.5rem;
+  background-color: #607d8b;
+  border: none;
+  padding: 7px;
+  border-radius: 50%;
+  box-shadow: 0 4px #999;
+}
+
+#addNewbug button:hover {
+  background-color: #435765;
+}
+
+#addNewbug button:active {
+  background-color: #435765;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.modal-content {
+  background-color: #607d8b;
+  color: #d5ba36;
+}
+
+.modal-content input {
+  background-color: #d5ba36;
+  border: none;
+}
+
+.modal-content input:focus {
+  background-color: #d5ba36;
+  border: none;
+  box-shadow: none;
+}
+
+#addBugformSubmit {
+  color: #d5ba36;
+  background-color: #607d8b;
+  border: 1px solid #d5ba36;
+}
+
+#addBugformSubmit:hover {
+  background-color: #435765;
+}
+
+.modal-header {
+  border-bottom: 1px solid #d5ba36;
+}
+
+.btn-close:focus {
+  box-shadow: none;
+}
+
+.option {
+  cursor: pointer;
+}
+
+#addedLabels {
+  display: flex;
+}
+
+.addedLabel {
+  display: flex;
+  border: 1px dotted #d5ba36;
+  border-radius: 5px;
+  padding: 3px;
+  margin-left: 4px;
+}
+
+#labelDropdown {
+  background-color: #435765;
+  padding: 3px;
+}
+
+.removeLabel {
+  margin-left: 3px;
+  cursor: pointer;
+}
+
+#newlabel {
+  display: flex;
+}
+
+#attachLabel {
+  color: #d5ba36;
+  background-color: #607d8b;
+  border: 1px solid #d5ba36;
+  margin-left: 3px;
+}
+
+#attachLabel:hover {
+  background-color: #435765;
+}
+
+#bugTablediv {
+  margin-top: 30px;
+}
+
+#bugTable {
+  background-color: #607d8b;
+  color: #d5ba36;
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid #e4cf69;
+}
+.tableHead th {
+  border: 1px solid #e4cf69;
+  padding: 10px;
+  background-color: #435765;
+}
+
+#bugTable tbody td {
+  border: 1px solid #e4cf69;
+  padding: 5px;
+}
