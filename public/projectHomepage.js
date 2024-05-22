@@ -26,7 +26,7 @@ async function showProjects(
 ) {
   try {
     const response = await fetch(
-      `http://localhost:8000/api/project/getProjects?pageNumber=${pageNumber}&description=${description}&name=${name}&author=${author}`
+      `https://buggify.onrender.com/api/project/getProjects?pageNumber=${pageNumber}&description=${description}&name=${name}&author=${author}`
     );
     if (!response.ok) {
       throw new Error("Failed to fetch data");
@@ -122,7 +122,7 @@ async function showProjects(
 async function populateFilter() {
   try {
     const response = await fetch(
-      `http://localhost:8000/api/project/getUniqueAuthors`
+      `https://buggify.onrender.com/api/project/getUniqueAuthors`
     );
     if (!response.ok) {
       throw new Error("Failed to fetch data");
